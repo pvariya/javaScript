@@ -33,5 +33,5 @@ array.map((item)=>{
      return item % 2 == 0;
     })
 
-    console.log(...array2);
+    console.log(array2);
 })
