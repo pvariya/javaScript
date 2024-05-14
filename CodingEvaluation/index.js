@@ -1,4 +1,6 @@
 studentList = []
+let salary_Sum = 0;
+let prev_Salary = 0;
 
 const deletData = (i) => {
     studentList.splice(i, 1)
@@ -6,7 +8,7 @@ const deletData = (i) => {
 }
 const uiMaker = () => {
     document.getElementById("tbody").innerHTML = ""
-    studentList.map((ele,i) => {
+    studentList.map((ele, i) => {
         let tr = document.createElement("tr")
 
         let td1 = document.createElement("td")
@@ -30,7 +32,7 @@ const uiMaker = () => {
 
         let td7 = document.createElement("td")
         if (ele.preWorkExperienceInYear <= 5) {
-            td7.innerHTML = "junior"    
+            td7.innerHTML = "junior"
         }
         else {
             td7.innerHTML = "senior"
@@ -44,10 +46,9 @@ const uiMaker = () => {
 
         tr.append(td1, td2, td3, td4, td5, td6, td7, td8)
         document.getElementById("tbody").append(tr)
-
-        let count = ele++;
-        // console.log(count);
     })
+
+    document.getElementById("count").innerHTML = `Total Hired Employee : ${studentList.length}`;
 }
 
 const studentData = (e) => {
@@ -60,6 +61,7 @@ const studentData = (e) => {
         preWorkExperienceInYear: document.getElementById("preWorkExperienceInYear").value,
         contactEmailId: document.getElementById("contactEmailId").value
     }
+
     studentList.push(data)
     uiMaker()
 }
