@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input {
+            display: block;
+            width:200px;
+            margin-top: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        #center-form{
+            display: flex;
+            justify-content: center;
+        }
+       #student{
+            /* border: 1px solid black;    */
+            text-align: center;
+        }
+        #table{
+            width: 100%;
+        }
+        #table,td,th{
+            margin-top:10px ;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+        #btn{
+            padding: 10px;
+            width: 225px;
+        }
+        #deleteItem{
+           cursor: pointer;   
+           color: white;
+        }
+        .colorY{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- form -->
+    <div id="center-form">
+    <form id="student">
+        <h1>Hair a new Employee</h1>
+        <input type="text" placeholder="Employee Name" class="input" id="name">
+        <select name="" id="jobRoal" class="input">
+            <option value="">select job role</option>
+            <option value="SDE-1">SDE-1</option>
+            <option value="SDE-2">SDE-2</option>
+            <option value="HR Manager">HR Manager</option>
+        </select>
+        <select name="" id="jobDepartment" class="input">
+            <option value="">Select Department</option>
+            <option value="engineering">engineering</option>
+            <option value="HR">HR</option>
+        </select>
+        <input type="text" placeholder="monthly salary" class="input" id="monthlySalary">
+        <input type="text" placeholder="pre work experience in year" class="input" id="preWorkExperienceInYear">
+        <input type="email" placeholder="contact email id" class="input" id="contactEmailId">
+        <button id="btn" class="input">Hire</button>
+    </form>
+</div>
+
+    <!-- table -->
+    <table id="table">
+        <thead>
+            <td class="colorY">employer name</td>
+            <td class="colorY">Job Roal</td>
+            <td class="colorY">Department</td>
+            <td class="colorY">Monthl Salary</td>
+            <td class="colorY">Work Experience</td>
+            <td class="colorY">Contact Email</td>
+            <td class="colorY">Roal Type</td>
+            <td class="colorY">Fire Employee</td>
+
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</body>
+<script src="./index.js"></script>
+
+</html>
