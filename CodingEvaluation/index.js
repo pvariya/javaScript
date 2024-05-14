@@ -65,5 +65,11 @@ const studentData = (e) => {
     studentList.push(data)
     uiMaker()
 }
-
+const deleteAllData=()=>{
+    document.getElementById("tbody").innerHTML=""
+    studentList=[]
+    let p=0
+   p= document.getElementById("count").innerHTML = `Total Hired Employee : ${studentList.length}`
+}
+document.getElementById("dataDelet").addEventListener("click",deleteAllData)
 document.getElementById("btn").addEventListener("click", studentData)

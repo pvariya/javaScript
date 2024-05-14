@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #dataDelet{
+            background-color: red;
+            color: white;
+            text-align: center;
+            border: none;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
         .input {
             display: block;
             width:200px;
@@ -41,6 +50,11 @@
         }
         .colorY{
             background-color: yellow;
+        }
+        #btnCenter{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -86,7 +100,13 @@
 
         </tbody>
     </table>
-    <h3 id="count"></h3>
+    <div id="btnCenter">
+        <div>
+            <button id="dataDelet">Delet All Data</button>
+            <h3 id="count"></h3>
+        </div>
+    </div>
+   
 </body>
 <script src="./index.js"></script>
 
