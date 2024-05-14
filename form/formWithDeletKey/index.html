@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+   #table{
+        width: 100%;
+    }
+    #table,td,th{
+        margin-top:10px ;
+      
+        text-align: center;
+        border: 1px solid black;
+        border-collapse:collapse;
+    }
+    #student{
+        width: 100%;
+        text-align: center;
+    }
+    #name ,#course,#grid{
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <form id="student">
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="course" placeholder="course"> 
+        <input type="text" id="grid" placeholder="grid">
+        <button id="submit">click</button>
+    </form>
+    <table id="table">
+        <thead> 
+            <td>NAME</td>
+            <td>COURSE</td>
+            <td>GRID</td>
+            <td id="delet"><button onclick="delet()">DELETE</button></td>
+        </thead>
+        <tbody id="tbody">  
+
+        </tbody>
+    </table>
+</body>
+<script src="./index.js"></script>
+</html>

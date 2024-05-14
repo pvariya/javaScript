@@ -242,7 +242,7 @@ let data = [
 ]
 
 
-
+// let temp=``
 data.map((ele) => {
 
     // img
@@ -266,4 +266,13 @@ data.map((ele) => {
     div.setAttribute("class", "boxDiv")
 
     document.getElementById("product").append(div)
+
+//     temp += `
+//     <div class="box"> 
+//     <img src="${ele.img}">
+//     <p>$ele.price</p>
+//     <h4>$ele.title</h4>
+// </div>`
 })  
+// document.getElementById("product").innerHTML=temp
+
