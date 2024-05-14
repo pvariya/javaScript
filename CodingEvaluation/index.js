@@ -48,7 +48,7 @@ const uiMaker = () => {
         document.getElementById("tbody").append(tr)
     })
 
-    document.getElementById("count").innerHTML = `Total Hired Employee : ${studentList.length}`;
+    document.getElementById("countEmp").innerHTML = `Total Hired Employee : ${studentList.length}`;
 }
 
 const studentData = (e) => {
@@ -69,7 +69,7 @@ const deleteAllData=()=>{
     document.getElementById("tbody").innerHTML=""
     studentList=[]
     let p=0
-   p= document.getElementById("count").innerHTML = `Total Hired Employee : ${studentList.length}`
+   p= document.getElementById("countEmp").innerHTML = `Total Hired Employee : ${studentList.length}`
 }
 document.getElementById("dataDelet").addEventListener("click",deleteAllData)
 document.getElementById("btn").addEventListener("click", studentData)
