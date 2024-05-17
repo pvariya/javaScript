@@ -60,27 +60,27 @@
 </head>
 
 <body>
-    <!-- form -->
+    <!-- form -->       
     <div id="center-form">
-    <form id="student">
+    <form id="student" action="">
         <h1>Hair a new Employee</h1>
-        <input type="text" placeholder="Employee Name" class="input" id="name">
-        <select name="" id="jobRoal" class="input">
+        <input type="text" placeholder="Employee Name" class="input" id="name" required />
+        <select name="" id="jobRoal" class="input" required>
             <option value="">select job role</option>
             <option value="SDE-1">SDE-1</option>
             <option value="SDE-2">SDE-2</option>
             <option value="HR Manager">HR Manager</option>
         </select>
-        <select name="" id="jobDepartment" class="input">
+        <select name="" id="jobDepartment" class="input" required>
             <option value="">Select Department</option>
             <option value="engineering">engineering</option>
             <option value="HR">HR</option>
         </select>
-        <input type="text" placeholder="monthly salary" class="input" id="monthlySalary">
-        <input type="text" placeholder="pre work experience in year" class="input" id="preWorkExperienceInYear">
-        <input type="email" placeholder="contact email id" class="input" id="contactEmailId">
-        <button id="btn" class="input">Hire</button>
-    </form>
+        <input type="text" placeholder="monthly salary" class="input" id="monthlySalary" required>
+        <input type="text" placeholder="pre work experience in year" class="input" id="preWorkExperienceInYear" required>
+        <input type="email" placeholder="contact email id" class="input" id="contactEmailId" required>
+        <input type="submit" value="hire"  id="btn" class="input" required>
+    </form> 
 </div>
 
     <!-- table -->
@@ -89,7 +89,7 @@
             <td class="colorY">employer name</td>
             <td class="colorY">Job Roal</td>
             <td class="colorY">Department</td>
-            <td class="colorY">Monthl Salary</td>
+            <td class="colorY">monthly Salary</td>
             <td class="colorY">Work Experience</td>
             <td class="colorY">Contact Email</td>
             <td class="colorY">Roal Type</td>
@@ -104,9 +104,12 @@
         <div>
             <button id="dataDelet">Delet All Data</button>
             <h3 id="countEmp"></h3>
+            <h3 id="CountSlry"></h3>
         </div>
     </div>
-   
+    
+    
+
 </body>
 <script src="./index.js"></script>
 

@@ -1,0 +1,37 @@
+#maindiv{
+     background:linear-gradient(to bottom, rgb(0, 0, 0) ,rgb(101, 100, 100) );
+    height: 935px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    /* border: 1px solid black; */
+   margin-bottom: 20px;        
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.flexBox{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxbold{
+    font-size: 1.3rem;
+    font-weight: 600;
+}

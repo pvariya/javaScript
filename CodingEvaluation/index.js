@@ -1,9 +1,9 @@
 studentList = []
 let salary_Sum = 0;
-let prev_Salary = 0;
 
-const deletData = (i) => {
+const deletData = (i,monthlySalary) => {
     studentList.splice(i, 1)
+    salary_Sum-=monthlySalary
     uiMaker()
 }
 const uiMaker = () => {
@@ -22,7 +22,7 @@ const uiMaker = () => {
 
         let td4 = document.createElement("td")
         td4.innerHTML = ele.monthlySalary
-
+       
 
         let td5 = document.createElement("td")
         td5.innerHTML = ele.preWorkExperienceInYear
@@ -31,7 +31,10 @@ const uiMaker = () => {
         td6.innerHTML = ele.contactEmailId
 
         let td7 = document.createElement("td")
-        if (ele.preWorkExperienceInYear <= 5) {
+        if(ele.preWorkExperienceInYear == Number("")) {
+            td7.innerHTML = "FRESHER"
+        }   
+        else if (ele.preWorkExperienceInYear <= 5) {
             td7.innerHTML = "junior"
         }
         else {
@@ -40,14 +43,16 @@ const uiMaker = () => {
 
         let td8 = document.createElement("td")
         td8.innerHTML = "Delete"
-        td8.addEventListener("click", () => deletData(i))
+        td8.addEventListener("click", () => deletData(i, ele.monthlySalary))
         td6.setAttribute("id", "deleteItem")
         td8.style.backgroundColor = "red"
 
         tr.append(td1, td2, td3, td4, td5, td6, td7, td8)
         document.getElementById("tbody").append(tr)
-    })
 
+
+    })
+    document.getElementById("CountSlry").innerHTML = `total Salary : ${salary_Sum}`
     document.getElementById("countEmp").innerHTML = `Total Hired Employee : ${studentList.length}`;
 }
 
@@ -63,13 +68,16 @@ const studentData = (e) => {
     }
 
     studentList.push(data)
+
+    salary_Sum+=Number(data.monthlySalary)
+
     uiMaker()
 }
-const deleteAllData=()=>{
-    document.getElementById("tbody").innerHTML=""
-    studentList=[]
-    let p=0
-   p= document.getElementById("countEmp").innerHTML = `Total Hired Employee : ${studentList.length}`
+const deleteAllData = () => {   
+    document.getElementById("tbody").innerHTML = ""
+    studentList = []
+    let p = 0
+    p = document.getElementById("countEmp").innerHTML = `Total Hired Employee : ${studentList.length}`
 }
-document.getElementById("dataDelet").addEventListener("click",deleteAllData)
+document.getElementById("dataDelet").addEventListener("click", deleteAllData)
 document.getElementById("btn").addEventListener("click", studentData)
