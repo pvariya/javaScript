@@ -1,0 +1,18 @@
+#mainDiv{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(
+       black,white
+    );
+}
