@@ -13,7 +13,24 @@
     grid-template-columns: repeat(4,1fr);
 }
 .BoxDiv{
-    border: 1px solid black; 
-    height: 300px ;
-    width: 200px;                                                                                                                       ;
+    border: 1px solid black;                                                                                                        
+}
+.img {
+    width: 100px;
+    height: 100px;
+}
+.price{
+    font-size: 20px;
+}
+.BoxDiv {
+    font-size: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+button {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size:15px;
 }
