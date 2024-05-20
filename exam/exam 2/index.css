@@ -1,0 +1,16 @@
+.img{
+    height: 100px;
+    /* width: 100px; */
+}
+#box{
+    /* margin: auto; */
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.BoxDiv{
+    
+    border: 1px solid black; 
+    height: 300px ;
+    width: 200px;                                                                                                                       ;
+}
