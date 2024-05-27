@@ -1,0 +1,20 @@
+#ques{
+    display: flex;
+    justify-content: center;
+}
+.div{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+   
+}
+#formMainDiv{
+    display: flex;
+    justify-content: center;
+}
+.inputTag{
+    display: block;
+    margin:15px ;
+    padding: 15px;
+}
