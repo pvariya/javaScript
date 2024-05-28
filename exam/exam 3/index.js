@@ -91,7 +91,7 @@ let arrQue = [
     },
     {
         question: "Which of the following can be used to call a JavaScript Code Snippet?",
-        answer: 18,
+        answer: "Preprocessor",
         a: "Function/Method",
         b: "Preprocessor",
         c: "Triggering Event",
@@ -185,7 +185,7 @@ arrQue.map((ele) => {
     let br = document.createElement("br");
 
     let div = document.createElement("div");
-    div.append(que, divtag, br);
+    div.append(que,divtag, br);
     div.setAttribute("class", "div");
 
     document.getElementById("quesList").append(div);
