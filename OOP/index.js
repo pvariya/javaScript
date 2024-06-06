@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 class Employee {
     constructor(name, salary,department, experience) {
         this.name = name;
@@ -56,7 +56,7 @@ class Employee {
   const fireunExperienced = () => {
     employees = employees.map(emp => emp.experience > 2);
   employeeList();
-=======
+
 class Employee {
     constructor(name, salary,department, experience) {
         this.name = name;
@@ -114,5 +114,5 @@ class Employee {
   const fireunExperienced = () => {
     employees = employees.map(emp => emp.experience > 2);
   employeeList();
->>>>>>> 2144091d1aa5010c1f2bed0baa5120cc6b186f5e
   };
+}
