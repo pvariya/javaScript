@@ -22,7 +22,6 @@ const api = async () => {
           
           let buyButton = document.createElement("a");
           buyButton.className = "buy-button";
-          buyButton.href = "#";  // Replace with actual link if available
           buyButton.innerHTML = "BUY NOW";
           
           productDiv.append(title, img, price, buyButton);
