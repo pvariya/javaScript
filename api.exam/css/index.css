@@ -1,0 +1,92 @@
+#mainDiv{
+display: flex;
+}
+.box{
+  border: 1px solid black;
+}
+#sidebar{
+    width: 20%;
+    height: 800px;
+    position: -webkit-sticky;
+     position: sticky;
+    top: 0;
+}
+#content{
+    width: 70%;
+    height: auto;
+}
+/* .img{
+  height: 100px;
+} */
+.button{
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* CSS Styles for Product Cards */
+.product {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+#productBox{
+  display: flex;
+  justify-content:space-evenly;
+}
+#content{
+  margin-left: 20px;
+}
+.product{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+
