@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      form {
+        max-width: 600px;
+        margin: auto;
+        background: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+      form input,
+      form select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+      form button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      form button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+       Navbar -->
+      <!-- <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#my-books">My Books</a></li>
+          <li><a href="#bookmark">Bookmark</a></li>
+        </ul>
+      </nav> -->
+    </header> 
+
+    <!-- Home Page -->
+    <section id="home">
+      <h2>Home Page</h2>
+      <form id="addBookForm">
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName" required /><br />
+
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" name="authorName" required /><br />
+
+        <label for="bookDescription">Book Description:</label>
+        <textarea
+          id="bookDescription"
+          name="bookDescription"
+          rows="4"
+          required
+        ></textarea
+        ><br />
+
+        <label for="addedDate">Added Date:</label>
+        <input type="date" id="addedDate" name="addedDate" required /><br />
+
+        <label for="bookCategory">Book Category:</label>
+        <select id="bookCategory" name="bookCategory" required>
+          <option value="">Select Category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Science">Science</option>
+          <option value="History">History</option>
+          <!-- Add more options as needed --></select
+        ><br />
+
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    <!-- Dashboard Page -->
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>Total Books: <span id="totalBooks">0</span></p>
+      <label for="filterCategory">Filter by Category:</label>
+      <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Non-fiction">Non-fiction</option>
+        <option value="Science">Science</option>
+        <option value="History">History</option>
+        <!-- Add more options as needed -->
+      </select>
+      <table id="dashboardTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>Added Date</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Buy</th>
+            <th>Bookmark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be populated dynamically using JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- My Books Page -->
+    <section id="my-books">
+      <h2>My Books</h2>
+      <table id="myBooksTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>Added Date</th>
+            <th>Category</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be populated dynamically using JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Bookmark Page -->
+    <section id="bookmark">
+      <h2>Bookmark</h2>
+      <table id="bookmarkTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>Added Date</th>
+            <th>Category</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be populated dynamically using JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    
+  </body>
+  <script src="./index.js"></script>
+</html>
