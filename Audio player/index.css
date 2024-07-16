@@ -10,6 +10,10 @@ body {
   #audioPlayer{
       border: none;
   }
+  .title{
+    margin-left: 20px;
+    margin-right: 20px;
+}
   .audio-player {
     background-color: #ffffff;
     border-radius: 10px;
@@ -23,7 +27,10 @@ body {
     width: 100%;
     margin-bottom: 10px;
   }
-  
+  .img{
+    height: 50px;
+    border-radius: 50%;
+  }
   .controls {
     display: flex;
     justify-content: space-between;
@@ -47,4 +54,14 @@ body {
     margin-top: 10px;
     font-size: 14px;
     color: #555555;
+  }
+  .IMG{
+
+    height: 200px !important;
+    width: 200px !important;
+  }
+  .alineDiv{
+    display: flex;
+    align-items: center;
+    margin: 10px;
   }
