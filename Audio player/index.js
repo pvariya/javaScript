@@ -7,29 +7,32 @@ const songInfo = document.getElementById("songInfo");
 const data = [
   {
     id: 1,
-    title: "Song 1",
+    image: "https://a10.gaanacdn.com/gn_img/albums/w4MKPgOboj/MKPDo0mxKo/size_m.jpg",
+    title: "Radha Rani",
     artist: "Artist 1",
-    file: "https://rr4---sn-cvh76nez.googlevideo.com/videoplayback?expire=1721044779&ei=y7qUZt_RLbDh6dsPwuKRiAY&ip=188.40.52.26&id=o-AD6bix799bDaOqKX7EUpjqc3s95dVoUmcillaWgfJ9v2&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=4177281&dur=258.881&lmt=1714458586279063&keepalive=yes&c=ANDROID_TESTSUITE&txp=4402434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhAPrR9MbRFtWPC80F-fJuZHRDEV1EkyUZHUuD9xpCCYStAiEA5RFyzvGEtRSMbUXqlPT6ix0EhuLsYi3iioyOpnd0qsc%3D&rm=sn-4g5eke7s&fexp=24350516,24350518&req_id=a2c6ead1c04a3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-bu2a-nu8s7e&cms_redirect=yes&cmsv=e&mh=5e&mip=27.116.48.74&mm=29&mn=sn-cvh76nez&ms=rdu&mt=1721022799&mv=m&mvi=4&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AHlkHjAwRQIgAR1GqyqN2JTaxabise4zK13g2ey4WgJiq7mT6HAwf3MCIQCk_CcplMy_CoJ14hhrZqMXa3m0OV8dukG8rUbb8TjoDw%3D%3D",
+    file: "https://rr3---sn-ci5gup-g5we.googlevideo.com/videoplayback?expire=1721111080&ei=yL2VZoKXFdfC6dsP8PamgAM&ip=188.40.52.25&id=o-AJLvmHNLYvffUKvI0LNNKA0pROUMXV0nQkrfVfdkQlvZ&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=6936968&dur=406.081&lmt=1714587094751557&keepalive=yes&c=ANDROID_TESTSUITE&txp=4502434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAKZCM-rOWqDAGut7SSYQD5gE59A2qFEcRlTaNy7pVHgeAiAKwV8Sm6W-r8Hiexb1CrNrcfBphAQ6ul8QDtnabA0ymA%3D%3D&redirect_counter=1&rm=sn-4g5ey77s&rrc=104&fexp=24350516&req_id=f8b2fa2f7c64a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=MU&mip=117.99.49.27&mm=31&mn=sn-ci5gup-g5we&ms=au&mt=1721094393&mv=u&mvi=3&pl=20&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AHlkHjAwRgIhAILh5aSb5gM7bWAo1wbL_6qe4UgMxSOST_o0HZdfqgQHAiEAhzQMwlDQoUzPkEmuipSAEoniWH2RrC-wjq1wSkZFDIw%3D"
   },
   {
     id: 2,
-    title: "Song 2",
+    image: "https://a10.gaanacdn.com/gn_img/albums/koMWQ7BKqL/oMWQY1PWqL/size_m.jpg",
+    title: "Nach le Nach le",
     artist: "Artist 2",
-    file: "https://rr3---sn-bu2a-nu86.googlevideo.com/videoplayback?expire=1721044900&ei=RLuUZvGzL9Tj6dsPxr61mA8&ip=188.40.52.24&id=o-AMWmfK2IuH-4VP9p-IdGKtyy5uYpT68fifHMdJv7w4U-&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=6936968&dur=406.081&lmt=1714587094751557&keepalive=yes&c=ANDROID_TESTSUITE&txp=4502434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgLaalT2IjZBISavAsu4q--Mi5KibCjJdLwGCeq1oagTgCIQCkWe-B1h4HdAVH5OVIVvLRgpu5QMoBJak9fOmmjStyfw%3D%3D&redirect_counter=1&rm=sn-4g5eky7l&fexp=24350516,24350518&req_id=4fdcb68c18cda3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=MU&mip=27.116.48.74&mm=31&mn=sn-bu2a-nu86&ms=au&mt=1721022200&mv=u&mvi=3&pcm2cms=yes&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AHlkHjAwRQIgII0k0ptQn-hC8zXZ-jpbCumyzmYepE8qCU6BlkXSUGQCIQCF7OvEm-QfBsutTaCksL5M_aXW9iey37Hx6YFn471Y1w%3D%3D",
-  },
+    file: "https://rr3---sn-npoeenez.googlevideo.com/videoplayback?expire=1721117230&ei=ztWVZryYMYO36dsP6vCa4AQ&ip=162.55.128.6&id=o-AH7k304qYojaGNhm184dgWcN3J4_DIf_pmFYXi2aTWzJ&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=4177281&dur=258.881&lmt=1714458586279063&keepalive=yes&c=ANDROID_TESTSUITE&txp=4402434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRAIgX_p0aNe6J_ezoHG53yJKeVT7Wg82vDtBqB-oWpUQgrQCIDj_1EkUpJwTQB2aoGmZkrdrbGAerR6b3S7OMsOa1tmU&redirect_counter=1&cm2rm=sn-4g5ekk7e&rrc=80&fexp=24350516&req_id=48bf31d0fb3da3ee&cms_redirect=yes&cmsv=e&mh=5e&mip=117.99.49.27&mm=34&mn=sn-npoeenez&ms=ltu&mt=1721094402&mv=u&mvi=3&pl=20&lsparams=mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AHlkHjAwRQIgE1V3gkyZtw6y3umMFixdjqm_Cy47VhMofdEEtctp6UECIQCV57LVcaUOpEcyuIlKmvINEqLmHDwIMEXDZyezoj4OGQ%3D%3D",
+  },  
   {
     id: 3,
-    title: "Song 3",
+    image: "https://a10.gaanacdn.com/gn_img/albums/d41WjnWPLq/41Wjz1LOWP/size_l_1712905431.webp",
+    title: "Maine khud ko",
     artist: "Artist 2",
-    file: "https://rr2---sn-bu2a-nu8s.googlevideo.com/videoplayback?expire=1721044948&ei=dLuUZsGHJdjXi9oP9ImTwAk&ip=46.4.48.22&id=o-AK8Cp1UYdIIrrPLrDtxkvFsHcOOmS1ZzOXoJ7q1hxARX&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=5829226&dur=329.101&lmt=1716857954381281&keepalive=yes&c=ANDROID_TESTSUITE&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhAOvK6yUiEEYPPjlqQUO7TvfxupTy_J9T1lcWgzCUZ7x4AiEAiXjzgklRqBK-JwsZ16nfPamRlvifIjVrR7VVEPESnKA%3D&redirect_counter=1&rm=sn-4g5eyl7z&fexp=24350516,24350518&req_id=dfb52c26c4ada3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=bW&mip=27.116.48.74&mm=31&mn=sn-bu2a-nu8s&ms=au&mt=1721022200&mv=u&mvi=2&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AHlkHjAwRgIhANZaNJUktz2DpV54V0htshtNglGkvoe_EAqmStXsu5weAiEA33XUNf72-frT4GQRgnytksh--zS6mr18zSzh6uybEj4%3D",
+    file: "https://rr2---sn-ci5gup-g5wl.googlevideo.com/videoplayback?expire=1721117279&ei=_9WVZtD2G4GJ6dsPqYGwyAU&ip=162.55.96.91&id=o-AGKdAB66_Rr-2OzB9UMXJccAXUxGMWYlSj7wzX2nLOF6&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=5829226&dur=329.101&lmt=1716857954381281&keepalive=yes&c=ANDROID_TESTSUITE&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAPUyqVdAxTC3mvrv-v8NSALsMDQDWjpl6Z9hhA3pjM8sAiAG9TLz8TiuChLWNPjE3BJFzbczECc48vDFee3lcfXZuA%3D%3D&redirect_counter=1&rm=sn-4g5ezs7s&rrc=104&fexp=24350516&req_id=56a2b798fa53a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=bW&mip=117.99.49.27&mm=31&mn=sn-ci5gup-g5wl&ms=au&mt=1721094393&mv=u&mvi=2&pl=20&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AHlkHjAwRAIgVbLyzn_PSrTSe1U42An3IF_lEi4cCdWOHRHpLnwFSvQCIB2oO46YTWd9rjD1MhFYGnOmqMWcHHlChgidehsSO4ia",
   },
   {
     id: 4,
-    title: "Song 4",
+    image: "https://a10.gaanacdn.com/gn_img/albums/Rz4W8evbxD/4W87xyq93x/size_l.jpg",
+    title: "tu hain toh",
     artist: "Artist 2",
-    file: "https://rr1---sn-cvh76nle.googlevideo.com/videoplayback?expire=1721027447&ei=F3eUZqPxKbKB3LUPiMu30A0&ip=103.154.37.16&id=o-AJ7SHJSWWee3CY3kyY5Yiq-TjOgn5J2uabsRN3yTMVgD&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&gcr=in&bui=AXc671L_mH-jsZZCzCfaOb9EizIsBpCmWHewYyGErJ5fzJa8lqpTig89ywnjCQ6RCoeXTTcN7PEgoO6S&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=lIr_tdDtGykjcbSnrtmUz4YQ&rqh=1&gir=yes&clen=4906106&dur=288.021&lmt=1718146286616813&keepalive=yes&c=TVHTML5_SIMPLY_EMBEDDED_PLAYER&sefc=1&txp=5532434&n=fGA-LUA0m9JZwA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhAPdUKP8135asVPOS0C6EPj97yZvXNsVxZQV0veH9XKNtAiEAlh3JzxRrzSxG8PO1lZBolnB8TnoLuvsi06mqULkxgpg%3D&rm=sn-3jja-jv3s7e,sn-h55l77s&fexp=24350515,24350517&req_id=3a816e5ac9c3a3ee&redirect_counter=2&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=qR&mip=27.116.48.74&mm=29&mn=sn-cvh76nle&ms=rdu&mt=1721023016&mv=m&mvi=1&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AHlkHjAwRQIgb7HTrXwh4gGFVgERHW_0dpKdgYvx9W-kfT1yyOconK8CIQCFZByNNe-ToUrDHl8hx5Bxvly0jDya68tSibhJWkWFRA%3D%3D",
+    file: "https://rr3---sn-cvh7kn6z.googlevideo.com/videoplayback?expire=1721117353&ei=SdaVZtj1CMeJ9fwP86CEEA&ip=115.98.233.8&id=o-ACxEEsPTf21KCzV4e2wrZX_OLkIUEDWNwaLegRR7Ywiv&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&gcr=in&bui=AXc671J6QBVICTP8yAA_Ee7StR0zPbtjcNK2LK4NMtdRsgdKf5LQHf3UJQsYwulIE5dEe8XfhJRprZM4&vprv=1&svpuc=1&mime=audio%2Fwebm&ns=NY9QG-xq9PVh1XnUDTe2ENIQ&rqh=1&gir=yes&clen=4906106&dur=288.021&lmt=1718146286616813&keepalive=yes&c=TVHTML5_SIMPLY_EMBEDDED_PLAYER&sefc=1&txp=5532434&n=DuOg27Z1Ir4ieQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAI7DhE7Avjk9c8-RXHDD3a4ehhU9157_2FJDsphJJodXAiAlEX4jOSaw3xU9jFEUkd2lBZpNYMz8eQ8JslKFp5BR5g%3D%3D&rm=sn-i5uif5t-cvhz7e,sn-cvhd77s&rrc=79,104&fexp=24350516&req_id=70af049ed57da3ee&redirect_counter=2&cms_redirect=yes&cmsv=e&ipbypass=yes&mh=qR&mip=117.99.49.27&mm=30&mn=sn-cvh7kn6z&ms=nxu&mt=1721095475&mv=m&mvi=3&pl=20&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AHlkHjAwRQIgacmWa2oNfBbtF6VQPEVTTB9q5NwSb0qmv38Fr869LiICIQCoioZE48kL9adXy4SFjZBcAYQqaJlHzkH9sRhCVnRKtw%3D%3D"
   },
- 
 ];
 
 let currentSongIndex = 0;
@@ -45,6 +48,9 @@ function playCurrentSong() {
   audioPlayer.play();
   updateSongInfo();
   playBtn.textContent = "Pause";
+
+   document.getElementById("mainImg").src=data[currentSongIndex].image
+ 
 }
 
 playBtn.addEventListener("click", () => {
@@ -77,9 +83,33 @@ function nextSong() {
 
 updateSongInfo();
 
-// const mapper=(data)=>{
-//       data.map((ele)=>{
-//         let title = document.createElement("p");
-//         title.innerHTML = ele.
-//       })
-// }
+const uimaker = (datax) => {
+  data.map((ele) => {
+    let title = document.createElement("span");
+    title.innerHTML = ele.title;
+    title.setAttribute("class","title")
+
+    let artist = document.createElement("span");
+    artist.innerHTML = ele.artist;
+    
+
+    let image = document.createElement("img");
+    image.src = ele.image;
+    image.setAttribute("class","img")
+
+    let plyBtn = document.createElement("button")
+    plyBtn.innerHTML="play"
+    plyBtn.addEventListener("click", () => {
+      // document.getElementById("mainImg").src=data[index].image
+      playCurrentSong()
+    })
+
+    let div = document.createElement("div");
+    div.append(image,title, artist,plyBtn);
+    div.setAttribute("class","alineDiv")
+
+    document.getElementById("songDiv").append(div);
+  });
+};
+
+uimaker(data);
