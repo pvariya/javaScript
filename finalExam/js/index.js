@@ -1,6 +1,19 @@
 import navbar from "../component/navbar.js"
 document.getElementById("navbar").innerHTML = navbar()
 
+
+
+
+
+
+
+
+let islogin = localStorage.getItem("isLogin")
+if(!islogin){
+    window.location.href="/finalExam/html/login.html"
+}
+
+
 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 const uiMaker = (data) => {
     document.getElementById("food-container").innerHTML = "";
