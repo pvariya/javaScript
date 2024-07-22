@@ -29,7 +29,7 @@ const navbar = (login = "login", signup = "signup") => {
               <a class="nav-link" href="/finalExam/html/cart.html">cart</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/login.html">${login}</a>
+              <a class="nav-link" href="/finalExam/html/login.html">${login}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/finalExam/html/singup.html">${signup}</a>
