@@ -1,0 +1,50 @@
+{
+  "user": [
+    {
+      "id": "1893",
+      "username": "gftrtyjt",
+      "email": "variyapurv@GMAIL.COM",
+      "password": "4211"
+    }
+    
+  
+  ],
+  "product": [
+    {
+      "id": "8fe8",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHjoAoCXwzWDsE1MDo8UKO9ibzC9X-16njg&s",
+      "price": "dfhgh",
+      "title": "sfgdfg"
+    },
+    {
+      "id": "0f12",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHjoAoCXwzWDsE1MDo8UKO9ibzC9X-16njg&s",
+      "price": "dfhgh",
+      "title": "rcfgdf"
+    },
+    {
+      "id": "0ebf",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHjoAoCXwzWDsE1MDo8UKO9ibzC9X-16njg&s",
+      "price": "dfhgh",
+      "title": "ertyrthgxfhgxf"
+    },
+    {
+      "id": "90e5",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHjoAoCXwzWDsE1MDo8UKO9ibzC9X-16njg&s",
+      "price": "dfhgh",
+      "title": "sre5tydrgfthfdt"
+    },
+    {
+      "id": "1c8d",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHjoAoCXwzWDsE1MDo8UKO9ibzC9X-16njg&s",
+      "price": "rtertret",
+      "title": "ytutytryrtu"
+    },
+    {
+      "id": "c212",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeHjoAoCXwzWDsE1MDo8UKO9ibzC9X-16njg&s",
+      "price": "fsdefsdf",
+      "title": "rtreftgd"
+    }
+  ]
+}
