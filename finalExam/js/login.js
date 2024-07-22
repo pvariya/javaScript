@@ -1,6 +1,8 @@
 
-import navbar from "../api/userApi.js";
-import { login } from "../component/navbar.js";
+import {login} from "../api/userApi.js";
+import navbar from "../component/navbar.js";
+
+document.getElementById("navbar").innerHTML = navbar();
 
 document.getElementById("navbar").innerHTML = navbar();
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
@@ -11,6 +13,6 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         password: document.getElementById('password').value,
     };
 
-login(user);
+    login(user);
 
 });
