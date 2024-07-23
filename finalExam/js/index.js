@@ -121,4 +121,14 @@ document.getElementById('sortByPopularityBtn').addEventListener('click', async (
     const sortedItems = sortByPopularity(foodItems);
     uiMaker(sortedItems);
 });
-  
+  document.getElementById("searchValue").addEventListener('input', async(e)=>{
+    e.preventDefault()
+        let input = document.getElementById("searchValue").value
+        console.log(input);
+        let response = await fetch('https://jsonserver-xpeq.onrender.com/Food_Data');
+       
+        let data = await response.json();
+        console.log(data);
+        let filter = data.filter(elm=>elm.name.includes(input))
+        uiMaker(filter)
+})
