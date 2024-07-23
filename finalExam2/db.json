@@ -1,0 +1,130 @@
+{
+  "FinalExam_User": [
+    {
+      "id": "947c",
+      "name": "purv",
+      "email": "purv@gmail.com",
+      "Admine_User": "Admine",
+      "password": "1234"
+    },
+    {
+      "id": "e23a",
+      "name": "milap",
+      "email": "milap@gmail.com",
+      "Admine_User": "User",
+      "password": "1234"
+    }
+  ],
+  "courses": [
+    {
+      "name": "Learn Microsoft Flow",
+      "category": "Office Productivity",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJK82QTB2ugHHyrIP-HtJ6K1MJ37Mt41q8Q&s",
+      "actual_price_usd": 0,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-24T08:01:51.161000",
+      "description": "Learn The Basics of Python From Scratch – Free Course",
+      "url": "https://www.udemy.com/course/pythonbasics/",
+      "clean_url": "https://www.udemy.com/course/pythonbasics/"
+    },
+    {
+      "name": "HTML 5",
+      "category": "IT & Software",
+      "image": "https://img-b.udemycdn.com/course/480x270/5009916_fc64.jpg",
+      "actual_price_usd": 19.99,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-24T09:12:00",
+      "description": "Python 3 : Learn HTML5 with Quizzes, Explore Python Basics and Advanced Concepts in a Comprehensive Python Course",
+      "url": "https://www.udemy.com/course/html-5-with-quizzes-and-python-3-complete-course-2023/?couponCode=064023571ED82669489F",
+      "clean_url": "https://www.udemy.com/course/html-5-with-quizzes-and-python-3-complete-course-2023/"
+    },
+    {
+      "name": "Python for Data Science",
+      "category": "Development",
+      "image": "https://img-c.udemycdn.com/course/480x270/4656122_aa2f_2.jpg",
+      "actual_price_usd": 539.99,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-24T06:25:00",
+      "description": "Supercharge Your Data Science Skills with Exercises – Master NumPy and Pandas for Effective Data Analysis!",
+      "url": "https://www.udemy.com/course/python-for-data-science-numpy-pandas-exercises/?couponCode=FREEDROP9",
+      "clean_url": "https://www.udemy.com/course/python-for-data-science-numpy-pandas-exercises/"
+    },
+    {
+      "name": "Learn Microsoft Flow",
+      "category": "Office Productivity",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRnXNiazl0SHo7wPTQe4uN9i4mbOZLMD2Rtw&s",
+      "actual_price_usd": 0,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-25T04:00:42.498000",
+      "description": "Linear Algebra refresher for machine learning. Basics + Python implementation – Free Course",
+      "url": "https://www.udemy.com/course/linear-algebra-basics-for-machine-learning/",
+      "clean_url": "https://www.udemy.com/course/linear-algebra-basics-for-machine-learning/"
+    },
+    {
+      "name": "Flask Framework",
+      "category": "IT & Software",
+      "image": "https://img-c.udemycdn.com/course/480x270/3330326_a986.jpg",
+      "actual_price_usd": 49.99,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-25T03:44:00",
+      "description": "Python,Flask Framework And Django Course For Beginners, Python Complete Course With Django And Flask Frameworks",
+      "url": "https://www.udemy.com/course/python-and-flask-and-django-course-for-beginners/?couponCode=4D04D53FF078618A3241",
+      "clean_url": "https://www.udemy.com/course/python-and-flask-and-django-course-for-beginners/"
+    },
+    {
+      "name": "Numpy For Data Science",
+      "category": "Development",
+      "image": "https://img-c.udemycdn.com/course/480x270/5429576_b2e8.jpg",
+      "actual_price_usd": 39.99,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-25T02:00:00",
+      "description": "Numpy means Numerical Python. In this course, you will learn about the Numpy Library in Python Programming Language",
+      "url": "https://www.udemy.com/course/python-numpy-exercises/?couponCode=NUMPY_FREE_JULY19",
+      "clean_url": "https://www.udemy.com/course/python-numpy-exercises/"
+    },
+    {
+      "name": "Ace the Python ",
+      "category": "IT & Software",
+      "image": "https://img-c.udemycdn.com/course/480x270/6079513_af04.jpg",
+      "actual_price_usd": 19.99,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-25T14:43:00",
+      "description": "Master Python  with PCEP Python Certification Practice Tests. Get  certification you need to boost your career.",
+      "url": "https://www.udemy.com/course/ace-the-python-pcep-30-02-exam-2024-mock-test-series-1/?couponCode=F4BA660D6968CA8A6F4A",
+      "clean_url": "https://www.udemy.com/course/ace-the-python-pcep-30-02-exam-2024-mock-test-series-1/"
+    },
+    {
+      "name": "Complete Python s",
+      "category": "Development",
+      "image": "https://img-c.udemycdn.com/course/480x270/4992432_ef17_3.jpg",
+      "actual_price_usd": 74.99,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-25T17:47:00",
+      "description": "Complete Python 2024 For Absolute Beginners . Build a complete understanding of Python ",
+      "url": "https://www.udemy.com/course/complete-python-2023-for-absolute-beginners/?couponCode=C0B6EB785CF45DF7F9D2",
+      "clean_url": "https://www.udemy.com/course/complete-python-2023-for-absolute-beginners/"
+    },
+    {
+      "name": "C++ s",
+      "category": "C++ Programming Languages",
+      "image": "https://img-c.udemycdn.com/course/480x270/4391676_c2dc_7.jpg",
+      "actual_price_usd": 84.99,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-26T09:13:00",
+      "description": "*Get the Official Certificate after Completing the Course Welcome to the one of the  BEST  C++  course ",
+      "url": "https://www.udemy.com/course/c-programming-for-everyone/?couponCode=2024_OCSALY_BEST",
+      "clean_url": "https://www.udemy.com/course/c-programming-for-everyone/"
+    },
+    {
+      "name": "Gemini AI",
+      "category": "Data Science",
+      "image": "https://img-c.udemycdn.com/course/750x422/6069639_51c3_4.jpg",
+      "actual_price_usd": 0,
+      "sale_price_usd": 0,
+      "sale_end": "2024-07-26T22:04:44.566000",
+      "description": "Google’s Gemini AI Course for Beginners with Python Unlock the potential of Google’s Gemini AI model ",
+      "url": "https://www.udemy.com/course/gemini-ai-course-for-beginners/",
+      "clean_url": "https://www.udemy.com/course/gemini-ai-course-for-beginners/"
+    }
+  ]
+}
