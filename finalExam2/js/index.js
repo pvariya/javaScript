@@ -1,25 +1,18 @@
-import navbar from "../navbar/navbar.js";
-document.getElementById("navbar").innerHTML = navbar()
-let userdetails = JSON.parse(localStorage.getItem("user"));
-// import {login} from "../api/userApi.js";
+import navbar  from"../api/navbar.js"
+document.getElementById("navbar").innerHTML=navbar()
 
 
+let user = localStorage.getItem("loggedInUser");
+document.addEventListener("DOMContentLoaded", () => {
+  if (!user) {
+    window.location.href = "/FinalExam2/html/login.html";
+  }
+}); 
 
-if (!userdetails) {
-    window.location.href = "/finalExam2/html/logIn.html"
-}
-
-if (userdetails) {
-    document.getElementById("navbar").innerHTML = navbar(userdetails.name, userdetails.Admine_User)
-}
-
-else {
-    document.getElementById("navbar").innerHTML = navbar()
-}
-
+document.getElementById("navbar").innerHTML= navbar(user.username)   
 
 const CouseApi = async () => {
-    let req = await fetch("https://filanexamjsonserver.onrender.com/courses")
+    let req = await fetch("http://localhost:3000/courses")
     let res = await req.json()
     uiMaker(res);
   return await res;
@@ -37,14 +30,14 @@ const uiMaker = (data) => {
         image.src = ele.image
 
         let price = document.createElement("h3")
-        price.innerHTML = `Price : ${ele.actual_price_usd}`
+        price.innerHTML = `Price : ${ele.price}`
 
 
         let category = document.createElement("h4")
-        category.innerHTML = ele.category
+        category.innerHTML = `seats:${ele.seats}`
 
         let description = document.createElement("p")
-        description.inertia = ele.description
+        description.inertia = ele.duration
 
         let div = document.createElement("div")
         div.append(name, image, price, category, description)
@@ -56,7 +49,7 @@ const uiMaker = (data) => {
 
 const fetchFoodItems = async () => {
     try {
-        const response = await fetch('https://filanexamjsonserver.onrender.com/courses');
+        const response = await fetch('http://localhost:3000/courses');
         if (!response.ok) {
             throw new Error('Failed to fetch food items');
         }
@@ -101,16 +94,14 @@ document.getElementById('sortByPriceBtn').addEventListener('click', async () => 
     uiMaker(sortedItems);
 });
 
-document.getElementById('sortByPopularityBtn').addEventListener('click', async () => {
-    const foodItems = await fetchFoodItems();
-    const sortedItems = sortByPopularity(foodItems);
-    uiMaker(sortedItems);
-});
+
+
+
 document.getElementById("searchValue").addEventListener('input', async (e) => {
     e.preventDefault()
     let input = document.getElementById("searchValue").value
     console.log(input);
-    let response = await fetch('https://filanexamjsonserver.onrender.com/courses');
+    let response = await fetch('http://localhost:3000/courses');
 
     let data = await response.json();
     console.log(data);
@@ -123,15 +114,18 @@ document.getElementById("searchValue").addEventListener('input', async (e) => {
 
 const addCourse = async(event) => {
 event.preventDefault()
-    let res = await fetch('https://filanexamjsonserver.onrender.com/FinalExam_User')
+    let res = await fetch('http://localhost:3000/users')
     let data = await res.json()
     let index =  data.length-1
-    console.log(data[index].Admine_User,data);
-    if (data[0].Admine_User =="Admine") {
-        window.location.href = "/finalExam2/html/Addcourse.html"
+    console.log(data[index].role,data);
+    if (data[index].role == "admin") {
+        window.location.href = "/FinalExam2/html/Dashboard.html"
     }
     else {  
         alert("Only admin can add course")
     }
 }
 document.getElementById("addCourseForm").addEventListener('submit', addCourse)
+
+
+
