@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.course-list {
+    margin-top: 20px;
+}
+
+.course-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.course-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.course-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.toggle-topics-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.course-details {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.topics {
+    margin-top: 10px;
+}
+
+.topic-item {
+    margin-bottom: 10px;
+}
+
+.topic-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.topic-header span {
+    font-size: 1em;
+}
+
+.toggle-subtopics-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.subtopics {
+    display: none;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.subtopics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subtopics li {
+    margin-bottom: 5px;
+}
+
+.add-topic,
+.add-subtopic {
+    margin-top: 10px;
+}
+
+.add-topic input,
+.add-subtopic input {
+    padding: 5px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.add-topic-btn,
+.add-subtopic-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
