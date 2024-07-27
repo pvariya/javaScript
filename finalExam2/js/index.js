@@ -114,7 +114,7 @@ document.getElementById("searchValue").addEventListener('input', async (e) => {
 
 const addCourse = async(event) => {
 event.preventDefault()
-    let res = await fetch('http://localhost:3000/users')
+    let res = await fetch('https://filanexamjsonserver-1.onrender.com/users')
     let data = await res.json()
     let index =  data.length-1
     console.log(data[index].role,data);
